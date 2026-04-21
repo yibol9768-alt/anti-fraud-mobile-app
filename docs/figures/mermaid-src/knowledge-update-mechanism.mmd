@@ -1,0 +1,13 @@
+flowchart LR
+    U1[新增公开案例] --> Pool[(候选案例池)]
+    U2[试点反馈样本] --> Pool
+    U3["模型错判复盘 FN/FP"] --> Pool
+    Pool --> Clean[清洗 + 去重 + 标注]
+    Clean --> Eval[加入 54-case+ 评测]
+    Eval --> RuleUp[更新 RISK / SAFE_HINTS]
+    Eval --> KbUp[更新 KB_BASE]
+    Eval --> PromptUp[更新 overlay prompt]
+    RuleUp --> CI[xelatex / vitest 回归]
+    KbUp --> CI
+    PromptUp --> CI
+    CI --> Release[发布 v 下一版]

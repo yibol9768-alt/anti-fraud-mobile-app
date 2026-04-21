@@ -1,0 +1,18 @@
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'expo.modules.a30guardian'
+version = '0.7.10-canary-20260327-0789fbc'
+
+android {
+  namespace "expo.modules.a30guardian"
+  defaultConfig {
+    versionCode 1
+    versionName "0.7.10-canary-20260327-0789fbc"
+  }
+  lintOptions {
+    abortOnError false
+  }
+}

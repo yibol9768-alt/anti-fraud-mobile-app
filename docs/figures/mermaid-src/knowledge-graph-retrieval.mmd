@@ -1,0 +1,10 @@
+flowchart LR
+    Q[用户多模态查询<br/>fraudType + 摘要 + 模态] --> Hash[本地 hash embedding<br/>回退路径]
+    Q --> DS[DashScope<br/>text-embedding-v4<br/>1024 维]
+    Hash --> Sim[向量余弦相似度]
+    DS --> Sim
+    Sim --> Top[Top-3 / 4 KB 案例]
+    Top --> Rerank["重排序<br/>fraudType 同类优先<br/>safe 信号过滤"]
+    Rerank --> Out["snippet + tags + similarity<br/>注入 ARK overlay prompt"]
+    classDef ext fill:#fff5cc,stroke:#cc9933
+    class DS ext

@@ -1,0 +1,22 @@
+flowchart LR
+    subgraph Revenue[收入结构]
+        r1[基础平台费<br/>年订阅]
+        r2[功能模块费<br/>守护增强 / 行业话术包]
+        r3[私有化部署费]
+        r4[运维服务费]
+        r5[定制开发费]
+    end
+    subgraph Cost[主要成本]
+        c1[模型 token<br/>Ark + DashScope]
+        c2[云资源<br/>bun server + 对象存储]
+        c3[内容运营<br/>案例与话术更新]
+        c4[现场试点 + 培训]
+    end
+    subgraph Channel[交付渠道]
+        ch1[内部 APK / TestFlight]
+        ch2[行业专题 build]
+        ch3[培训 + 演示服务]
+        ch4[POC + 试点]
+    end
+    Revenue -.覆盖.-> Cost
+    Channel --> Revenue

@@ -1,0 +1,22 @@
+graph TB
+    subgraph Comm[社区]
+        c1[街道反诈月]
+        c2[志愿入户]
+    end
+    subgraph Edu[校园]
+        e1[新生安全周]
+        e2[兼职反诈班会]
+    end
+    subgraph Care[助老]
+        ca1[家庭监护试点]
+        ca2[助老服务站演示]
+    end
+    subgraph Finance[金融]
+        f1[银行营业厅展示]
+        f2[反诈宣传月主题]
+    end
+    Pivot[A30 演示版 + 行业脚本]
+    Pivot --> Comm
+    Pivot --> Edu
+    Pivot --> Care
+    Pivot --> Finance

@@ -1,0 +1,21 @@
+graph LR
+    subgraph Tr[传统反诈手段]
+        t1[短信黑名单 + 拦截]
+        t2[客服热线 96110 人工]
+        t3[社区宣传海报]
+        t4[平台/银行风险提示]
+        t5[应用商店下架]
+    end
+    subgraph A30[A30 多模态闭环]
+        a1["主动防御入口<br/>电话/短信/截图三模态"]
+        a2["本地规则 + RAG + 大模型<br/>复合判定"]
+        a3["结构化报告<br/>风险分 + 证据 + 建议"]
+        a4["长期记忆 + 画像<br/>连续判断"]
+        a5["家人联动 + Android 守护<br/>场景化干预"]
+    end
+    Tr -.被动告知.- P[用户]
+    A30 -.主动核验.- P
+    classDef old fill:#f5d6d1,stroke:#c44e52
+    classDef new fill:#d6e6f2,stroke:#4c72b0
+    class t1,t2,t3,t4,t5 old
+    class a1,a2,a3,a4,a5 new

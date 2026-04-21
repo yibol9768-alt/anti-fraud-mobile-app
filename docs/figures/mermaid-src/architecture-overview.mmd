@@ -1,0 +1,31 @@
+flowchart LR
+    subgraph Client[移动端 · 跨平台前端]
+        UI[页面层<br/>首页/检测/聊天/报告<br/>记忆/个人/守护]
+        State[状态层<br/>认证 · 反诈 · 聊天]
+        Native[原生能力<br/>录音 / 选图 / 安卓守护]
+        Storage[本机持久化<br/>异步存储]
+    end
+    subgraph Server[服务端 · 单进程]
+        trpc[接口路由<br/>反诈 · 聊天 · 语音]
+        engine[规则引擎<br/>评分 · 证据]
+        rag[本地知识检索<br/>案例 + 回退向量]
+        overlay[大模型 overlay<br/>上调 + 受控下调]
+        forge[存储代理<br/>可选]
+    end
+    subgraph External[外部服务]
+        ark[火山方舟<br/>对话 + 视觉]
+        ds[阿里云百炼<br/>向量 + 语音]
+        volc[火山语音<br/>可选备用]
+    end
+    UI --> State
+    State --> trpc
+    UI --> Native
+    State --> Storage
+    trpc --> engine
+    engine --> rag
+    rag --> overlay
+    overlay --> ark
+    rag -.向量检索.-> ds
+    trpc -.语音转写.-> ds
+    trpc -.备用.-> volc
+    trpc -->|可选上传| forge

@@ -1,0 +1,13 @@
+{
+  "name": "eval",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "readiness": "node src/runReadiness.mjs",
+    "functional": "node src/runFunctional.mjs",
+    "latency": "node src/runLatency.mjs",
+    "stress": "node src/runStress.mjs",
+    "all": "node src/runAll.mjs"
+  }
+}

@@ -1,0 +1,19 @@
+flowchart LR
+    subgraph Rule[稳定层 · 规则信号]
+        r1[12 条风险信号<br/>占位 URL / 施压核查 / XX 机构 ...]
+        r2[7 条反向安全信号<br/>客服热线 / IVR / 装维术语]
+        r3[并发叠加<br/>硬黑阀门]
+    end
+    subgraph Retrieve[检索增强]
+        k1[6 类案例库]
+        k2[外部向量服务<br/>1024 维]
+        k3[余弦相似度<br/>+ 哈希回退]
+    end
+    subgraph Generate[解释与报告]
+        g1[对话模型<br/>温度 0]
+        g2[类型归一化<br/>宽松解析]
+        g3[上调合并<br/>受控下调]
+    end
+    Rule -->|本地初判| Retrieve
+    Retrieve -->|案例片段| Generate
+    Generate --> Out[结构化输出]

@@ -1,0 +1,23 @@
+\contentsline {table}{\numberline {1}{\ignorespaces 用户类型、典型痛点与产品支撑能力映射}}{6}{table.caption.6}%
+\contentsline {table}{\numberline {2}{\ignorespaces 明鉴 需求优先级矩阵}}{9}{table.caption.8}%
+\contentsline {table}{\numberline {3}{\ignorespaces 基础移动版与 Android 守护增强版能力差异}}{14}{table.caption.9}%
+\contentsline {table}{\numberline {4}{\ignorespaces 明鉴 与主流反诈相关产品横向对比}}{17}{table.caption.14}%
+\contentsline {table}{\numberline {5}{\ignorespaces 明鉴 ToB 定价基准(参考报价,单位:万元/年)}}{18}{table.caption.15}%
+\contentsline {table}{\numberline {6}{\ignorespaces To B 目标客户与典型业务场景}}{20}{table.caption.16}%
+\contentsline {table}{\numberline {7}{\ignorespaces 明鉴 四级回退策略矩阵}}{33}{table.caption.26}%
+\contentsline {table}{\numberline {8}{\ignorespaces 明鉴 关键模块拆分与实现方案}}{34}{table.8}%
+\contentsline {table}{\numberline {9}{\ignorespaces \texttt {RISK\_HINTS} 当前 12 条规则信号}}{38}{table.caption.30}%
+\contentsline {table}{\numberline {10}{\ignorespaces \texttt {SAFE\_HINTS} 当前 7 条反向信号（用于抑制误报）}}{39}{table.caption.31}%
+\contentsline {table}{\numberline {11}{\ignorespaces 明鉴 测试维度与 54-case 实测结果}}{44}{table.caption.34}%
+\contentsline {table}{\numberline {12}{\ignorespaces 按诈骗类型(fraud\_type)分解的识别表现}}{45}{table.caption.35}%
+\contentsline {table}{\numberline {13}{\ignorespaces 54-case 全量 case 级识别结果(T=black, F=white)}}{46}{table.caption.36}%
+\contentsline {table}{\numberline {14}{\ignorespaces 明鉴 项目阶段推进计划}}{52}{table.caption.42}%
+\contentsline {table}{\numberline {15}{\ignorespaces 明鉴 核心优势一览}}{58}{table.caption.44}%
+\contentsline {table}{\numberline {16}{\ignorespaces 明鉴 服务端环境变量完整参考}}{67}{table.16}%
+\contentsline {table}{\numberline {17}{\ignorespaces 明鉴 tRPC procedures 摘要}}{69}{table.17}%
+\contentsline {table}{\numberline {18}{\ignorespaces 54-case 评测样本清单(按 case\_id 升序)}}{70}{table.18}%
+\contentsline {table}{\numberline {19}{\ignorespaces 项目常用术语与缩写说明}}{83}{table.19}%
+\contentsline {table}{\numberline {20}{\ignorespaces 明鉴 主要开源依赖与许可}}{88}{table.20}%
+\contentsline {table}{\numberline {21}{\ignorespaces 明鉴 开发关键里程碑}}{96}{table.21}%
+\contentsline {table}{\numberline {22}{\ignorespaces 关键事务 RACI 矩阵}}{98}{table.caption.97}%
+\contentsline {table}{\numberline {23}{\ignorespaces 计划书版本记录}}{103}{table.23}%

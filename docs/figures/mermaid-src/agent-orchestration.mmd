@@ -1,0 +1,20 @@
+flowchart LR
+    subgraph Now["当前形态 · 单进程链路"]
+        direction TB
+        n1[检测请求] --> n2[规则引擎]
+        n2 --> n3[本地案例检索]
+        n3 --> n4[大模型 overlay]
+        n4 --> n5[记忆合并 + 报告]
+        n5 --> n6[返回前端]
+    end
+    Now --> Transition[能力逐步拆分] --> Future
+    subgraph Future["规划形态 · 多角色协作"]
+        direction TB
+        f1[编排 Agent]
+        f1 --> a1[语音 / 视觉<br/>感知 Agent]
+        f1 --> a2[风险决策 Agent]
+        f1 --> a3[解释生成 Agent]
+        f1 --> a4[记忆检索 Agent]
+        f1 --> a5[动作 / 守护 Agent]
+        f1 --> a6[报告生成 Agent]
+    end

@@ -1,0 +1,33 @@
+flowchart LR
+    subgraph InputPath[输入数据]
+        i1[文本/短信<br/>粘贴]
+        i2[录音音频<br/>二进制]
+        i3[截图图片<br/>内联或上传]
+        i4[安卓守护<br/>扫描结果]
+    end
+    subgraph OnDevice[本机处理]
+        d1[本地持久化<br/>身份 / 引导 / 记忆]
+        d2[草稿 + 短期记忆<br/>合并]
+    end
+    subgraph Network[网络传输]
+        n1[批量接口调用]
+        n2[可选对象存储代理]
+    end
+    subgraph ServerPath[服务端分析]
+        s1[本地规则引擎]
+        s2[本地知识检索]
+        s3[外部模型<br/>对话 + 向量]
+    end
+    subgraph Output[输出与回写]
+        o1[分析结果 / 报告]
+        o2[记忆更新]
+        o3[前端展示与提醒]
+    end
+    i1 --> d2
+    i2 --> n2
+    i3 --> n2
+    i4 --> d2
+    d2 --> n1
+    n1 --> s1 --> s2 --> s3 --> o1
+    o1 --> o2 --> d1
+    o1 --> o3

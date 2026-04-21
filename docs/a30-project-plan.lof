@@ -1,0 +1,27 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces 电信网络诈骗问题场景示意图}}{2}{figure.caption.4}%
+\contentsline {figure}{\numberline {2}{\ignorespaces 传统反诈方式与 明鉴 多模态闭环模式对比图}}{4}{figure.caption.5}%
+\contentsline {figure}{\numberline {3}{\ignorespaces 明鉴 用户画像与需求映射图}}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {4}{\ignorespaces 明鉴 首页实机截图:顶部"先暂停,再核验"提示条常驻,中部展示综合风险分、历史事件数、风险标签数,底部是三类主动防御入口。}}{12}{figure.caption.10}%
+\contentsline {figure}{\numberline {5}{\ignorespaces 明鉴 产品整体使用流程图:用户从登录注册进入三步引导,随后在首页选择三类主动防御入口,提交线索后获得风险报告,并可继续追问或联动家人。}}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {6}{\ignorespaces 三大主动防御入口页面示意}}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {7}{\ignorespaces 明鉴 核心功能页面截图组}}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {8}{\ignorespaces 明鉴 To B 目标客户场景图}}{22}{figure.caption.17}%
+\contentsline {figure}{\numberline {9}{\ignorespaces 明鉴 商业模式与交付流程示意}}{22}{figure.caption.18}%
+\contentsline {figure}{\numberline {10}{\ignorespaces 明鉴 分阶段市场拓展路径图}}{22}{figure.caption.19}%
+\contentsline {figure}{\numberline {11}{\ignorespaces 明鉴 系统总体架构图}}{26}{figure.caption.20}%
+\contentsline {figure}{\numberline {12}{\ignorespaces 明鉴 Agent 编排架构图}}{27}{figure.caption.21}%
+\contentsline {figure}{\numberline {13}{\ignorespaces 移动端—服务端—智能层分层架构图}}{27}{figure.caption.22}%
+\contentsline {figure}{\numberline {14}{\ignorespaces 明鉴 端到端处理链路图}}{29}{figure.caption.23}%
+\contentsline {figure}{\numberline {15}{\ignorespaces 明鉴 数据路线与模型路线示意}}{30}{figure.caption.24}%
+\contentsline {figure}{\numberline {16}{\ignorespaces 风险识别与报告生成链路图}}{30}{figure.caption.25}%
+\contentsline {figure}{\numberline {17}{\ignorespaces 明鉴 模块关系图}}{36}{figure.caption.27}%
+\contentsline {figure}{\numberline {18}{\ignorespaces 页面与模块映射图}}{36}{figure.caption.28}%
+\contentsline {figure}{\numberline {19}{\ignorespaces 明鉴 API 调用示意图}}{37}{figure.caption.29}%
+\contentsline {figure}{\numberline {20}{\ignorespaces 案例采集与清洗流程图}}{41}{figure.caption.32}%
+\contentsline {figure}{\numberline {21}{\ignorespaces 明鉴 知识底座组织与更新机制}}{41}{figure.caption.33}%
+\contentsline {figure}{\numberline {22}{\ignorespaces 测试集构成图}}{48}{figure.caption.37}%
+\contentsline {figure}{\numberline {23}{\ignorespaces 明鉴 核心测试结果图}}{48}{figure.caption.38}%
+\contentsline {figure}{\numberline {24}{\ignorespaces 稳定性测试结果图}}{48}{figure.caption.39}%
+\contentsline {figure}{\numberline {25}{\ignorespaces 明鉴 演示闭环流程图}}{49}{figure.caption.40}%
+\contentsline {figure}{\numberline {26}{\ignorespaces 明鉴 展示与落地场景示意}}{50}{figure.caption.41}%
+\contentsline {figure}{\numberline {27}{\ignorespaces 明鉴 项目实施甘特图/阶段推进图}}{51}{figure.caption.43}%

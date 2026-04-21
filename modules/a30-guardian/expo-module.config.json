@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["A30GuardianModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.a30guardian.A30GuardianModule"]
+  }
+}

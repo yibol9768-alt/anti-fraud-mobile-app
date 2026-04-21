@@ -1,0 +1,40 @@
+flowchart LR
+    subgraph Input[输入采集]
+        A1[文本/短信]
+        A2[录音/通话]
+        A3[截图/图片]
+    end
+    subgraph Norm[归一化]
+        B1[语音转写]
+        B2[图片内联]
+        B3[记忆合并]
+    end
+    subgraph Engine[规则引擎]
+        C1[12 条风险信号<br/>+ 记忆 · 命中 · 并发]
+        C2[7 条反向安全信号<br/>safeDiscount]
+        C3[硬黑阀门]
+        C4[风险等级]
+    end
+    subgraph RAG[本地检索]
+        D1[六类案例关键词]
+        D2[远端向量<br/>或本地回退]
+        D3[余弦重排序]
+    end
+    subgraph Overlay[大模型 overlay]
+        E1[对话 + 视觉]
+        E2[类型归一化]
+        E3[上调合并<br/>受控下调]
+    end
+    subgraph Output[输出]
+        F1[分析结果]
+        F2[生成报告]
+        F3[记忆回写]
+        F4[前端展示]
+    end
+    A1 --> B3
+    A2 --> B1 --> B3
+    A3 --> B2 --> B3
+    B3 --> C1 --> C2 --> C3 --> C4
+    C4 --> D1 --> D2 --> D3
+    D3 --> E1 --> E2 --> E3
+    E3 --> F1 --> F2 --> F3 --> F4

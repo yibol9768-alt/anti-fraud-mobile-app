@@ -1,0 +1,30 @@
+flowchart LR
+    subgraph L1[界面层 · 页面路由]
+        direction TB
+        l1a[首页<br/>index.tsx]
+        l1b[检测<br/>detect.tsx]
+        l1c[聊天<br/>chat.tsx]
+        l1d[报告<br/>report.tsx]
+        l1e[记忆<br/>memory.tsx]
+        l1f[守护<br/>guardian-settings.tsx]
+    end
+    subgraph L2[状态层 · Context + 本地持久化]
+        direction TB
+        l2a[认证/引导<br/>auth-store.tsx]
+        l2b[反诈草稿/记忆<br/>anti-fraud-store.tsx]
+        l2c[聊天历史<br/>chat-store.tsx]
+    end
+    subgraph L3[接口层 · 类型安全 tRPC]
+        direction TB
+        l3a[反诈分析路由]
+        l3b[聊天路由]
+        l3c[语音路由]
+    end
+    subgraph L4[智能与知识层]
+        direction TB
+        l4a[本地规则引擎]
+        l4b[overlay 合并策略]
+        l4c[本地知识检索]
+        l4d[外部模型<br/>火山 Ark / 阿里云]
+    end
+    L1 --> L2 --> L3 --> L4

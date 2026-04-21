@@ -1,0 +1,27 @@
+sequenceDiagram
+    autonumber
+    participant UI as 移动端页面
+    participant Store as 状态层
+    participant TRPC as 接口客户端
+    participant Router as 服务端路由
+    participant Engine as 规则引擎
+    participant RAG as 本地检索
+    participant Ark as 对话模型
+    participant Mem as 本机存储
+
+    UI->>Store: 提交文本/音频/图片
+    Store->>TRPC: 发起分析请求
+    TRPC->>Router: 批量接口调用
+    Router->>Engine: 本地规则打分
+    Engine-->>Router: 本地初判
+    Router->>RAG: 构建检索上下文
+    RAG->>Ark: 可选向量检索
+    RAG-->>Router: 命中案例
+    Router->>Ark: overlay 生成解释
+    Ark-->>Router: 结果合并
+    Router->>Engine: 记忆合并
+    Router->>Engine: 生成报告
+    Router-->>TRPC: 返回分析 / 记忆 / 报告
+    TRPC-->>Store: 回调更新
+    Store-->>Mem: 持久化记忆
+    Store-->>UI: 渲染最新结果

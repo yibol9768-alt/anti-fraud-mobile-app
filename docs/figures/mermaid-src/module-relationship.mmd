@@ -1,0 +1,45 @@
+graph LR
+    subgraph Pages[页面层]
+        P1[首页]
+        P2[检测]
+        P3[聊天]
+        P4[报告]
+        P5[记忆]
+        P6[个人]
+        P7[守护]
+    end
+    subgraph Store[状态层]
+        S1[认证]
+        S2[反诈]
+        S3[聊天]
+    end
+    subgraph Trpc[接口客户端]
+        T1[类型安全调用]
+    end
+    subgraph API[服务端路由]
+        A1[反诈]
+        A2[聊天]
+        A3[语音]
+    end
+    subgraph Engine[智能层]
+        E1[规则引擎]
+        E2[对话客户端]
+        E3[本地检索 + 向量]
+    end
+    subgraph Guardian[安卓原生]
+        G1[守护模块]
+    end
+    P1 --> S2
+    P2 --> S2
+    P3 --> S3
+    P4 --> S2
+    P5 --> S2
+    P6 --> S2
+    P7 --> G1
+    S1 --> T1
+    S2 --> T1
+    S3 --> T1
+    T1 --> A1 & A2 & A3
+    A1 --> E1 --> E2 --> E3
+    A2 --> E2
+    A3 --> E2
