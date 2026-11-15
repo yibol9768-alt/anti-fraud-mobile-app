@@ -1,3 +1,9 @@
+<!-- repository-brand:start -->
+<p align="center"><img src=".github/assets/repository-cover.jpg" alt="Anti-Fraud Assistant" width="100%"></p>
+<p align="center"><strong>Multimodal fraud-risk awareness for different users.</strong></p>
+<p align="center"><a href="https://github.com/yibol9768-alt/anti-fraud-mobile-app">Code</a> · <a href="https://github.com/yibol9768-alt/anti-fraud-mobile-app/issues">Issues</a></p>
+<!-- repository-brand:end -->
+
 # A30 多模态反诈智能助手 · 文档索引
 
 本目录是 A30 项目(仓库 `a30-anti`)的完整文档体系入口。
